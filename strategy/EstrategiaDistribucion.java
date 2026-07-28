@@ -1,4 +1,6 @@
+package strategy;
 import java.util.List;
+
 
 public class EstrategiaDistribucion {
     private RutaDistribucion strategy;

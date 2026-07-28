@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+package iterator;
 
 public class Inventario implements IterableCollection {
     private List<Producto> productos = new ArrayList<>();

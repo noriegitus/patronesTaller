@@ -1,3 +1,5 @@
+package chain_of_responsibility;
+
 public class AtencionUserHandler extends BaseHandler {
     @Override
     public boolean handle(SolicitudCambio solicitud) {

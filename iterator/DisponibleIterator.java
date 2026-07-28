@@ -1,3 +1,5 @@
+package iterator;
+
 public class DisponibleIterator implements Iterator<Producto> {
     private Inventario inventario;
     private int posicion = 0;

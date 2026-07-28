@@ -1,3 +1,4 @@
+package strategy;
 import java.util.List;
 
 public class TransporteCiclista implements RutaDistribucion {

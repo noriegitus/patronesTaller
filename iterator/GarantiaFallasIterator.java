@@ -1,3 +1,5 @@
+package iterator;
+
 public class GarantiaFallasIterator implements Iterator<Producto> {
     private Inventario inventario;
     private int posicion = 0;
