@@ -1,3 +1,5 @@
+package strategy;
+
 public class DepartamentoLogistica {
     private EstrategiaTransporte strategy;
 
