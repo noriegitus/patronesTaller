@@ -1,6 +1,6 @@
 package iterator;
 
 public interface IterableCollection {
-    Iterator<Producto> createDisponibleIterator();
-    Iterator<Producto> createGarantiaFallasIterator();
+    Iterator createDisponibleIterator();
+    Iterator createGarantiaFallasIterator();
 }
