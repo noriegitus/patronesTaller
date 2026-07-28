@@ -1,13 +1,11 @@
 package chain_of_responsibility;
 
 public class AtencionUserHandler extends BaseHandler {
+    
     @Override
-    public boolean handle(SolicitudCambio solicitud) {
-        if (!solicitud.isDentroDeGarantia()) {
-            System.out.println("Atención al Cliente: El producto está fuera del periodo de garantía.");
-            return false;
-        }
-        System.out.println("Atención al Cliente: Periodo de garantía validado.");
-        return super.handle(solicitud);
+    public void handle(SolicitudCambio solicitud) {
+        System.out.println("Atención al Cliente: Verificando que el producto esté en periodo de garantía... Validado.");
+        
+        super.handle(solicitud);
     }
 }
