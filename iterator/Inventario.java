@@ -3,10 +3,10 @@ import java.util.List;
 package iterator;
 
 public class Inventario implements IterableCollection {
-    private List<Producto> productos = new ArrayList<>();
+    private List<Producto> productos;
 
-    public void agregarProducto(Producto p) {
-        productos.add(p);
+    public Inventario(List<Producto> productos) {
+        this.productos = productos != null ? productos : new ArrayList<>();
     }
 
     public List<Producto> getProductos() {
@@ -14,12 +14,12 @@ public class Inventario implements IterableCollection {
     }
 
     @Override
-    public Iterator<Producto> createDisponibleIterator() {
+    public Iterator createDisponibleIterator() {
         return new DisponibleIterator(this);
     }
 
     @Override
-    public Iterator<Producto> createGarantiaFallasIterator() {
+    public Iterator createGarantiaFallasIterator() {
         return new GarantiaFallasIterator(this);
     }
 }
