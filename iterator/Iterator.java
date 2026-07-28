@@ -1,6 +1,6 @@
 package iterator;
 
-public interface Iterator<T> {
+public interface Iterator {
     boolean hasMore();
-    T getNext();
+    Producto getNext();
 }
