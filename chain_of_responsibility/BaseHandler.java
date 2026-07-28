@@ -10,10 +10,9 @@ public abstract class BaseHandler implements Handler {
     }
 
     @Override
-    public boolean handle(SolicitudCambio solicitud) {
+    public void handle(SolicitudCambio solicitud) {
         if (next != null) {
-            return next.handle(solicitud);
+            next.handle(solicitud);
         }
-        return true;
     }
 }
